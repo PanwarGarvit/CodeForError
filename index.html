@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Health Voice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rural Health Voice Assistant</h1>
+            <div class="subtitle">Ask health questions in your local language</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="hi">हिंदी (Hindi)</option>
+                    <option value="bn">বাংলা (Bengali)</option>
+                    <option value="te">తెలుగు (Telugu)</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                    <option value="en">English</option>
+                    <option value="ml">മലയാളം (Malayalam)</option>
+                </select>
+            </div>
+            
+            <div class="voice-interface">
+                <button id="voice-btn" class="voice-btn">🎤</button>
+                <div id="status" class="status">Press the microphone button to ask your health question</div>
+                <div id="transcription" style="min-height: 20px; margin: 10px 0;"></div>
+            </div>
+            
+            <div class="response-area" id="response-area">
+                <p>Your health information will appear here...</p>
+            </div>
+            
+            <div class="common-questions">
+                <h3>Common Health Questions:</h3>
+                <button class="question-btn" data-question="What are malaria symptoms?">Malaria Symptoms</button>
+                <button class="question-btn" data-question="How to prevent diarrhea?">Diarrhea Prevention</button>
+                <button class="question-btn" data-question="First aid for burns">Burns First Aid</button>
+                <button class="question-btn" data-question="Pregnancy care tips">Pregnancy Care</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Voice-Enabled Multilingual Health Information Portal for Rural India</p>
+            <p>Note: This is for informational purposes only. Consult a doctor for medical advice.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
